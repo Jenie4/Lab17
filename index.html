@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Contacto Morado Estético</title>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Librerías externas -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="form-container">
+    <h1>Formulario de contacto</h1>
+    <form id="contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Número de contacto" required>
+
+      <!-- Contenedor conjunto de subtítulo + imagen -->
+      <div class="mensaje-header">
+        <label for="mensaje">Mensaje:</label>
+        <img src="./Colibri_coruscans.jpg" alt="Colibrí" class="colibri-img">
+      </div>
+
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+
+  <!-- Script principal -->
+  <script src="./main.js"></script>
+</body>
+</html>
